@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,18 +8,57 @@
         <meta name="robots" content="index,follow">
         <link rel ="icon" href ="money.png">
         <meta name ="viewport" content="width=device-width,initial-scale=1">
+        <style>
+            body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* 使得內容最少占滿整個螢幕高度 */
+            flex-grow : 1
+        }
+            header, footer {
+            background-color:#333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+            #自我介紹 {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        </style>
     </head>
-    <body>
-        <h1>Tim的部落格</h1>
-        <p>hi</p>
-        <h2>大家好我是Tim 是位高一新生 因爲想要學習有關網頁創建所以開了這個網站來練習 希望大家能多多支持</h2>
-        <p>我也是位游戲玩家</p>
-        <h2><a target="_blank" href="video.html">
-            這裏有我剪輯的精華<img src="/iconmonstr-youtube-10.svg"/>
-        </a></h2>
-        <h2><a target="_blank" href="page2.html">帥圖</a></h2>
-        <img src="17.png"/>
+    
+    <body onload = "javascript:window.alert('你好呀！')">
+        <header>
+            <h1>Tim的部落格</h1>
+        </header>
+        
+        <div id="自我介紹 ">
+            <h2>自我介紹</h2>
+            <p>大家好我是Tim 今年高一 因爲想要學習有關網頁創建所以開了這個網站來練習 </p>
+            <p>這個網站之後會有不同的分類</p>
+            <p>可能放自己玩電玩的影片</p>
+            <p>或放學校發生的有趣事情</p>
+            <p>又或是與家人的美好時光</p>
+            <p>總之雜七雜八的很多 反正就記錄美好生活！</p>
+        </div>
+        
+        <aside>
+            <nav>
+                <ul>
+                    <li><h4><a target="_blank" href="video.html">這裏有我剪輯的精華<img src="/iconmonstr-youtube-10.svg"/></a></h4>
+                    <li><h4><a target="_blank" href="page2.html">帥圖</a></h4></li>
+                </ul>
+            </nav>
+        </aside>
         <hr/>
         <p>參考影片</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/CLUPkcLQm64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        <footer>
+            <p>彥霆有限公司所屬 翻印必究 @Copyright2023</p>
+        </footer>
     </body>
