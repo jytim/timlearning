@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* 使得內容最少占滿整個螢幕高度 */
+    flex-grow: 1;
+    background-color: #333; /* 將背景色設置為黑色 */
+    color: white; /* 將文字顏色設置為白色 */
+    }
+
+header, footer {
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    }
+
+#自我介紹 {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    }
+
+#former-topic{
+    color : white
+}
+
+#latter-topic{
+    background-color: rgb(255, 106, 0);
+    color : black
+}
