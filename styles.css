@@ -52,6 +52,10 @@ a {
     font-weight: bold;
 }
 
+img {
+    max-width: 100%;
+    height: auto; /* 這將保持圖片的寬高比例 */
+}
 
 article {
     /* 設置背景顏色 */
