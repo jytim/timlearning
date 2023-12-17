@@ -53,3 +53,9 @@ a {
 }
 
 
+article {
+    /* 設置背景顏色 */
+    background-color: #333; /* 將背景色設置為黑色 */
+    color :#ffffff
+
+}
