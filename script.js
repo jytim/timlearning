@@ -1,13 +1,13 @@
-$(document).ready(function{
+$(document).ready(function(){
     var openModalBtn = $("#openModalBtn");
     var closeModalBtn = $("#closeModalBtn");
     var modal = $("#myModal");
 
-    openModalBtn.click(function{
+    openModalBtn.click(function(){
         modal.show();
     });
 
-    closeModalBtn.click(function{
+    closeModalBtn.click(function(){
         modal.hide();
     });
 
