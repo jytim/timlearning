@@ -1,18 +1,25 @@
-$(document).ready(showAlert);
+$(document).ready(function{
+    var openModalBtn = $("#openModalBtn");
+    var closeModalBtn = $("#closeModalBtn");
+    var modal = $("#myModal");
+
+    openModalBtn.click(function{
+        modal.show();
+    });
+
+    closeModalBtn.click(function{
+        modal.hide();
+    });
+
+    $(window).click(function (event) {
+        if (event.target === modal[0]) {
+            modal.hide();
+        }
+    });
+});
 
 
-function showAlert(){
-    alert
-}
 
 
 
 
-// 獲取用戶輸入
-var userInput = prompt('請輸入您在網站設定的事項：');
-
-// 將用戶輸入顯示在 alert 中
-if (userInput !== null) {  // 如果用戶按下取消，prompt 會返回 null
-    alert('您在網站設定的事項是：' + userInput);
-} else {
-    alert('您取消了輸入。');
