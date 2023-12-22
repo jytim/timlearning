@@ -14,7 +14,25 @@
         
         
     </head>
-    
+    <script>
+        var openModalBtn = $("#openModalBtn");
+        var closeModalBtn = $("#closeModalBtn");
+        var modal = $("#myModal");
+
+        openModalBtn.click(function(){
+            modal.show();
+        });
+
+        closeModalBtn.click(function(){
+            modal.hide();
+        });
+
+        $(window).click(function (event) {
+            if (event.target === modal[0]) {
+                modal.hide();
+            }
+        });
+    </script>
     <body onload = "javascript:window.alert('你好')">
         <header>
             <h1><span id="former-topic">Tim的</span><span id="latter-topic">部落格!</span></h1>
