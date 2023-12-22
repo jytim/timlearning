@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(index.html).ready(function(){
     var openModalBtn = $("#openModalBtn");
     var closeModalBtn = $("#closeModalBtn");
     var modal = $("#myModal");
